@@ -40,7 +40,7 @@ noble.on('discover', function(peripheral) {
 });
 
 function connectToTappy(peripheral) {
-    var comm = new NodeSerialCommunicator({peripheral: peripheral});
+    var comm = new NobleBleCommunicator({peripheral: peripheral});
     var tappy = new Tappy({communicator: comm});
 
     tappy.setMessageListener(function(msg) {
