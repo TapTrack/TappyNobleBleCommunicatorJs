@@ -1,0 +1,36 @@
+{
+    "name": "@taptrack/tappy-nobleblecommunicator",
+    "version": "0.0.1",
+    "description": "Node TappyBLE communicator based on Noble",
+    "main": "dist/tappynodeble.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "TapTrack",
+    "keywords": [
+        "TCMP",
+    "Tappy",
+    "TappyBLE"
+        ],
+    "devDependencies": {
+        "del": "^2.2.0",
+        "gulp": "^3.9.1",
+        "gulp-debug": "^2.1.2",
+        "gulp-jasmine": "^2.3.0",
+        "gulp-jshint": "^2.0.1",
+        "gulp-rename": "^1.2.2",
+        "gulp-uglify": "^1.5.3",
+        "jshint": "^2.9.2",
+        "jshint-stylish": "^2.2.0",
+        "merge-stream": "^1.0.0",
+        "run-sequence": "^1.2.1"
+    },
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/TapTrack/TappyNobleBleCommunicatorJs.git"
+    }
+}
