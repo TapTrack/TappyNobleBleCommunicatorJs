@@ -1,6 +1,6 @@
 {
     "name": "@taptrack/tappy-nobleblecommunicator",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Node TappyBLE communicator based on Noble",
     "main": "dist/tappynodeble.js",
     "directories": {

@@ -120,7 +120,6 @@
                                     self.rxCharacteristic = rxCharacteristic;
                                     self.txCharacteristic = txCharacteristic;
                                     txCharacteristic.on('data',function(data,isNotification) {
-                                        console.log("Received some data");
                                         self.readCallback(data);
                                     });
                                     txCharacteristic.subscribe(function(err) {
