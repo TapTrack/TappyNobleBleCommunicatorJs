@@ -200,7 +200,7 @@
                 self.errorCallback({error: err}); 
             } else if(!self.isSendBufferEmpty()) {
                 var chunk = self.stripNextChunkFromSendBuffer();
-                self.rxCharacteristic.write(new Buffer(chunk),false,self.sendCb.bind(self));
+                self.rxCharacteristic.write(Buffer.from(chunk),false,self.sendCb.bind(self));
             } else {
                 self.isSending = false;
             }
@@ -231,7 +231,7 @@
                 self.isSending = true;
 
                 var chunk = self.stripNextChunkFromSendBuffer();
-                self.rxCharacteristic.write(new Buffer(chunk),false,self.sendCb.bind(self));
+                self.rxCharacteristic.write(Buffer.from(chunk),false,self.sendCb.bind(self));
             }
         },
 
